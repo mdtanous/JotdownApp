@@ -3,27 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		744A955230F422FEE29BE5DB /* Pods_JotdownApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D97C1626FBB554B1615E6C /* Pods_JotdownApp.framework */; };
+		8A02C5EA2440FE71006202B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A02C5E92440FE71006202B5 /* Constants.swift */; };
+		8A7AC90B2442736D00F18DB1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AC90A2442736D00F18DB1 /* AuthService.swift */; };
+		8A97DF7A2444F0F10087D22F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97DF792444F0F10087D22F /* UserService.swift */; };
+		8A97DF7C2444F6160087D22F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97DF7B2444F6160087D22F /* User.swift */; };
+		8A97DF7E24451CE40087D22F /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97DF7D24451CE40087D22F /* UploadTweetController.swift */; };
+		8AB39F4D24460E7D00BFE24C /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB39F4C24460E7D00BFE24C /* CaptionTextView.swift */; };
+		8AB39F4F244614E400BFE24C /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB39F4E244614E400BFE24C /* TweetService.swift */; };
+		8AB39F512446195B00BFE24C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB39F502446195B00BFE24C /* Tweet.swift */; };
+		8AB39F5324463BEC00BFE24C /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB39F5224463BEC00BFE24C /* TweetCell.swift */; };
+		8AC653E6243F6A9100C94C7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC653E5243F6A9100C94C7D /* Extensions.swift */; };
+		8AC653E9243FBA9800C94C7D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC653E8243FBA9800C94C7D /* LoginController.swift */; };
+		8AC653EB243FBB6E00C94C7D /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC653EA243FBB6E00C94C7D /* RegistrationController.swift */; };
+		8AC653ED243FE32C00C94C7D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC653EC243FE32C00C94C7D /* Utilities.swift */; };
+		8AC653EF2440C51300C94C7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC653EE2440C51300C94C7D /* GoogleService-Info.plist */; };
 		8AC84F82243D2485008F4D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84F81243D2485008F4D32 /* AppDelegate.swift */; };
 		8AC84F84243D2485008F4D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84F83243D2485008F4D32 /* SceneDelegate.swift */; };
-		8AC84F86243D2485008F4D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84F85243D2485008F4D32 /* ViewController.swift */; };
 		8AC84F89243D2485008F4D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC84F87243D2485008F4D32 /* Main.storyboard */; };
 		8AC84F8B243D248C008F4D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC84F8A243D248C008F4D32 /* Assets.xcassets */; };
 		8AC84F8E243D248C008F4D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC84F8C243D248C008F4D32 /* LaunchScreen.storyboard */; };
+		8AC84F9E243D25EB008F4D32 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84F9D243D25EB008F4D32 /* MainTabController.swift */; };
+		8AC84FA0243D27B0008F4D32 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84F9F243D27B0008F4D32 /* FeedController.swift */; };
+		8AC84FA2243D2843008F4D32 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA1243D2843008F4D32 /* ExploreController.swift */; };
+		8AC84FA4243D2854008F4D32 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA3243D2854008F4D32 /* NotificationsController.swift */; };
+		8AC84FA6243D2860008F4D32 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA5243D2860008F4D32 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C5B10CDF3C3C14F831E5CD6 /* Pods-JotdownApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JotdownApp.debug.xcconfig"; path = "Target Support Files/Pods-JotdownApp/Pods-JotdownApp.debug.xcconfig"; sourceTree = "<group>"; };
+		45D97C1626FBB554B1615E6C /* Pods_JotdownApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JotdownApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AACFBDE3B6205DF9125A991 /* Pods-JotdownApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JotdownApp.release.xcconfig"; path = "Target Support Files/Pods-JotdownApp/Pods-JotdownApp.release.xcconfig"; sourceTree = "<group>"; };
+		8A02C5E92440FE71006202B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A7AC90A2442736D00F18DB1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8A97DF792444F0F10087D22F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8A97DF7B2444F6160087D22F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A97DF7D24451CE40087D22F /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
+		8AB39F4C24460E7D00BFE24C /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		8AB39F4E244614E400BFE24C /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
+		8AB39F502446195B00BFE24C /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		8AB39F5224463BEC00BFE24C /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		8AC653E5243F6A9100C94C7D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8AC653E8243FBA9800C94C7D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8AC653EA243FBB6E00C94C7D /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		8AC653EC243FE32C00C94C7D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8AC653EE2440C51300C94C7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8AC84F7E243D2485008F4D32 /* JotdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JotdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC84F81243D2485008F4D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AC84F83243D2485008F4D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AC84F85243D2485008F4D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8AC84F88243D2485008F4D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AC84F8A243D248C008F4D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC84F8D243D248C008F4D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC84F8F243D248C008F4D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC84F9D243D25EB008F4D32 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		8AC84F9F243D27B0008F4D32 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		8AC84FA1243D2843008F4D32 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		8AC84FA3243D2854008F4D32 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		8AC84FA5243D2860008F4D32 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744A955230F422FEE29BE5DB /* Pods_JotdownApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108E5AD0C19A27DB0E7725AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D97C1626FBB554B1615E6C /* Pods_JotdownApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AC653E7243FBA7600C94C7D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8AC653E8243FBA9800C94C7D /* LoginController.swift */,
+				8AC653EA243FBB6E00C94C7D /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		8AC84F75243D2485008F4D32 = {
 			isa = PBXGroup;
 			children = (
 				8AC84F80243D2485008F4D32 /* JotdownApp */,
 				8AC84F7F243D2485008F4D32 /* Products */,
+				90050D69E01FA3893B20DD0B /* Pods */,
+				108E5AD0C19A27DB0E7725AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,89 @@
 		8AC84F80243D2485008F4D32 /* JotdownApp */ = {
 			isa = PBXGroup;
 			children = (
+				8AC84F9C243D24E8008F4D32 /* Model */,
+				8AC84F9B243D24E2008F4D32 /* View */,
+				8AC84F9A243D24DE008F4D32 /* ViewModel */,
+				8AC84F99243D24D9008F4D32 /* Controller */,
+				8AC84F96243D24CE008F4D32 /* API */,
+				8AC84F95243D24B7008F4D32 /* Utils */,
 				8AC84F81243D2485008F4D32 /* AppDelegate.swift */,
 				8AC84F83243D2485008F4D32 /* SceneDelegate.swift */,
-				8AC84F85243D2485008F4D32 /* ViewController.swift */,
 				8AC84F87243D2485008F4D32 /* Main.storyboard */,
 				8AC84F8A243D248C008F4D32 /* Assets.xcassets */,
 				8AC84F8C243D248C008F4D32 /* LaunchScreen.storyboard */,
+				8AC653EE2440C51300C94C7D /* GoogleService-Info.plist */,
 				8AC84F8F243D248C008F4D32 /* Info.plist */,
 			);
 			path = JotdownApp;
+			sourceTree = "<group>";
+		};
+		8AC84F95243D24B7008F4D32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8AC653E5243F6A9100C94C7D /* Extensions.swift */,
+				8AC653EC243FE32C00C94C7D /* Utilities.swift */,
+				8A02C5E92440FE71006202B5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8AC84F96243D24CE008F4D32 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AC90A2442736D00F18DB1 /* AuthService.swift */,
+				8A97DF792444F0F10087D22F /* UserService.swift */,
+				8AB39F4E244614E400BFE24C /* TweetService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8AC84F99243D24D9008F4D32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AC653E7243FBA7600C94C7D /* Authentication */,
+				8AC84F9D243D25EB008F4D32 /* MainTabController.swift */,
+				8AC84F9F243D27B0008F4D32 /* FeedController.swift */,
+				8AC84FA1243D2843008F4D32 /* ExploreController.swift */,
+				8AC84FA3243D2854008F4D32 /* NotificationsController.swift */,
+				8AC84FA5243D2860008F4D32 /* ConversationsController.swift */,
+				8A97DF7D24451CE40087D22F /* UploadTweetController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8AC84F9A243D24DE008F4D32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8AC84F9B243D24E2008F4D32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AB39F4C24460E7D00BFE24C /* CaptionTextView.swift */,
+				8AB39F5224463BEC00BFE24C /* TweetCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AC84F9C243D24E8008F4D32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A97DF7B2444F6160087D22F /* User.swift */,
+				8AB39F502446195B00BFE24C /* Tweet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90050D69E01FA3893B20DD0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B10CDF3C3C14F831E5CD6 /* Pods-JotdownApp.debug.xcconfig */,
+				4AACFBDE3B6205DF9125A991 /* Pods-JotdownApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AC84F92243D248C008F4D32 /* Build configuration list for PBXNativeTarget "JotdownApp" */;
 			buildPhases = (
+				B43D536D2A0567F52E6ED2EC /* [CP] Check Pods Manifest.lock */,
 				8AC84F7A243D2485008F4D32 /* Sources */,
 				8AC84F7B243D2485008F4D32 /* Frameworks */,
 				8AC84F7C243D2485008F4D32 /* Resources */,
+				C66D26EE28C9717C8D00BE68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC84F8E243D248C008F4D32 /* LaunchScreen.storyboard in Resources */,
+				8AC653EF2440C51300C94C7D /* GoogleService-Info.plist in Resources */,
 				8AC84F8B243D248C008F4D32 /* Assets.xcassets in Resources */,
 				8AC84F89243D2485008F4D32 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +270,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B43D536D2A0567F52E6ED2EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JotdownApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66D26EE28C9717C8D00BE68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JotdownApp/Pods-JotdownApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JotdownApp/Pods-JotdownApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JotdownApp/Pods-JotdownApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8AC84F7A243D2485008F4D32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC84F86243D2485008F4D32 /* ViewController.swift in Sources */,
+				8A97DF7A2444F0F10087D22F /* UserService.swift in Sources */,
+				8AC84FA4243D2854008F4D32 /* NotificationsController.swift in Sources */,
+				8AB39F4D24460E7D00BFE24C /* CaptionTextView.swift in Sources */,
+				8AC84FA6243D2860008F4D32 /* ConversationsController.swift in Sources */,
+				8AC653ED243FE32C00C94C7D /* Utilities.swift in Sources */,
 				8AC84F82243D2485008F4D32 /* AppDelegate.swift in Sources */,
+				8AC653E6243F6A9100C94C7D /* Extensions.swift in Sources */,
+				8AB39F5324463BEC00BFE24C /* TweetCell.swift in Sources */,
+				8AC84FA2243D2843008F4D32 /* ExploreController.swift in Sources */,
+				8A7AC90B2442736D00F18DB1 /* AuthService.swift in Sources */,
+				8A97DF7E24451CE40087D22F /* UploadTweetController.swift in Sources */,
+				8A97DF7C2444F6160087D22F /* User.swift in Sources */,
 				8AC84F84243D2485008F4D32 /* SceneDelegate.swift in Sources */,
+				8AC84F9E243D25EB008F4D32 /* MainTabController.swift in Sources */,
+				8AC653E9243FBA9800C94C7D /* LoginController.swift in Sources */,
+				8AC653EB243FBB6E00C94C7D /* RegistrationController.swift in Sources */,
+				8AC84FA0243D27B0008F4D32 /* FeedController.swift in Sources */,
+				8A02C5EA2440FE71006202B5 /* Constants.swift in Sources */,
+				8AB39F512446195B00BFE24C /* Tweet.swift in Sources */,
+				8AB39F4F244614E400BFE24C /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +478,7 @@
 		};
 		8AC84F93243D248C008F4D32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5B10CDF3C3C14F831E5CD6 /* Pods-JotdownApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +497,7 @@
 		};
 		8AC84F94243D248C008F4D32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AACFBDE3B6205DF9125A991 /* Pods-JotdownApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
