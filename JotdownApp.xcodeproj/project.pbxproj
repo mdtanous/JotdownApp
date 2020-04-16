@@ -32,6 +32,9 @@
 		8AC84FA2243D2843008F4D32 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA1243D2843008F4D32 /* ExploreController.swift */; };
 		8AC84FA4243D2854008F4D32 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA3243D2854008F4D32 /* NotificationsController.swift */; };
 		8AC84FA6243D2860008F4D32 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC84FA5243D2860008F4D32 /* ConversationsController.swift */; };
+		8ADCA9FB24475C5900DBF22D /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */; };
+		8ADCA9FD24476C6A00DBF22D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FC24476C6A00DBF22D /* ProfileController.swift */; };
+		8ADCA9FF2447D4C200DBF22D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		8AC84FA1243D2843008F4D32 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		8AC84FA3243D2854008F4D32 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		8AC84FA5243D2860008F4D32 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
+		8ADCA9FC24476C6A00DBF22D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				8AC84FA3243D2854008F4D32 /* NotificationsController.swift */,
 				8AC84FA5243D2860008F4D32 /* ConversationsController.swift */,
 				8A97DF7D24451CE40087D22F /* UploadTweetController.swift */,
+				8ADCA9FC24476C6A00DBF22D /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 		8AC84F9A243D24DE008F4D32 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 			children = (
 				8AB39F4C24460E7D00BFE24C /* CaptionTextView.swift */,
 				8AB39F5224463BEC00BFE24C /* TweetCell.swift */,
+				8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +333,8 @@
 				8AC653ED243FE32C00C94C7D /* Utilities.swift in Sources */,
 				8AC84F82243D2485008F4D32 /* AppDelegate.swift in Sources */,
 				8AC653E6243F6A9100C94C7D /* Extensions.swift in Sources */,
+				8ADCA9FD24476C6A00DBF22D /* ProfileController.swift in Sources */,
+				8ADCA9FF2447D4C200DBF22D /* ProfileHeader.swift in Sources */,
 				8AB39F5324463BEC00BFE24C /* TweetCell.swift in Sources */,
 				8AC84FA2243D2843008F4D32 /* ExploreController.swift in Sources */,
 				8A7AC90B2442736D00F18DB1 /* AuthService.swift in Sources */,
@@ -332,6 +343,7 @@
 				8AC84F84243D2485008F4D32 /* SceneDelegate.swift in Sources */,
 				8AC84F9E243D25EB008F4D32 /* MainTabController.swift in Sources */,
 				8AC653E9243FBA9800C94C7D /* LoginController.swift in Sources */,
+				8ADCA9FB24475C5900DBF22D /* TweetViewModel.swift in Sources */,
 				8AC653EB243FBB6E00C94C7D /* RegistrationController.swift in Sources */,
 				8AC84FA0243D27B0008F4D32 /* FeedController.swift in Sources */,
 				8A02C5EA2440FE71006202B5 /* Constants.swift in Sources */,
