@@ -8,9 +8,19 @@
 
 import UIKit
 
+protocol ProfileHeaderDelegate: class {
+    func handleDismissal()
+}
+
 class ProfileHeader: UICollectionReusableView {
     
     // MARK: - Properties
+    
+    var user: User? {
+        didSet { configure() }
+    }
+    
+    weak var delegate: ProfileHeaderDelegate?
     
     private lazy var containerView: UIView = {
        let view = UIView()
@@ -35,7 +45,7 @@ class ProfileHeader: UICollectionReusableView {
     
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
+        iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.backgroundColor = .lightGray
         iv.layer.borderColor = UIColor.white.cgColor
@@ -57,7 +67,6 @@ class ProfileHeader: UICollectionReusableView {
     private let fullnameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.text = "Testie Tester"
         return label
     }()
     
@@ -68,6 +77,21 @@ class ProfileHeader: UICollectionReusableView {
         label.text = "This is where a user bio will go but might be better to remove it altogether"
         return label
     }()
+    
+    private let profileTitle: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 28)
+        label.text = "Entries"
+        return label
+    }()
+    
+ //   override var isSelected: Bool {
+ //       didSet {
+ //           profileTitle.font = isSelected ? UIFont.boldSystemFont(ofSize: 16) :
+ //           UIFont.systemFont(ofSize: 14)
+ //           profileTitle.textColor = isSelected ? .systemBlue : .lightGray
+  //      }
+ //   }
     
     // MARK: - Lifecycle
     
@@ -96,6 +120,9 @@ class ProfileHeader: UICollectionReusableView {
         addSubview(userDetailsStack)
         userDetailsStack.anchor(top: profileImageView.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 8, paddingLeft: 12, paddingRight: 12)
         
+        addSubview(profileTitle)
+        profileTitle.anchor(top: userDetailsStack.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 20, paddingLeft: 12, paddingRight: 12)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -105,10 +132,29 @@ class ProfileHeader: UICollectionReusableView {
     // MARK: - Selectors
     
     @objc func handleDismissal() {
-        
+        delegate?.handleDismissal()
     }
     
     @objc func handleEditProfileFollow() {
         
     }
+    
+    // MARK: - Helpers
+
+    func configure() {
+        guard let user = user else { return }
+        
+    // Could also be let viewModel = for line below
+        let viewModel = ProfileHeaderViewModel(user: user)
+        
+        profileImageView.sd_setImage(with: user.profileImageUrl)
+        
+        editProfileFollowButton.setTitle(viewModel.actionButtonTitle, for: .normal)
+        
+        fullnameLabel.text = user.fullname
+        
+    }
+    
 }
+
+    

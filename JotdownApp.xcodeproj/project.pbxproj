@@ -35,6 +35,7 @@
 		8ADCA9FB24475C5900DBF22D /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */; };
 		8ADCA9FD24476C6A00DBF22D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FC24476C6A00DBF22D /* ProfileController.swift */; };
 		8ADCA9FF2447D4C200DBF22D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */; };
+		8ADCAA012448B5F900DBF22D /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCAA002448B5F900DBF22D /* ProfileHeaderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 		8ADCA9FC24476C6A00DBF22D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		8ADCAA002448B5F900DBF22D /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */,
+				8ADCAA002448B5F900DBF22D /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				8AB39F4D24460E7D00BFE24C /* CaptionTextView.swift in Sources */,
 				8AC84FA6243D2860008F4D32 /* ConversationsController.swift in Sources */,
 				8AC653ED243FE32C00C94C7D /* Utilities.swift in Sources */,
+				8ADCAA012448B5F900DBF22D /* ProfileHeaderViewModel.swift in Sources */,
 				8AC84F82243D2485008F4D32 /* AppDelegate.swift in Sources */,
 				8AC653E6243F6A9100C94C7D /* Extensions.swift in Sources */,
 				8ADCA9FD24476C6A00DBF22D /* ProfileController.swift in Sources */,
