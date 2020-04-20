@@ -22,7 +22,9 @@ class MainTabController: UITabBarController {
         }
     }
     
+    
     let actionButton: UIButton = {
+        
         let button = UIButton(type: .system)
         button.tintColor = .white
         button.backgroundColor = .systemBlue
@@ -116,7 +118,7 @@ class MainTabController: UITabBarController {
     func templateNavigationController(image: UIImage?, rootViewController: UIViewController) -> UINavigationController {
         let nav = UINavigationController(rootViewController: rootViewController)
         nav.tabBarItem.image = image
-        nav.navigationBar.barTintColor = .white
+        nav.navigationBar.barTintColor = .systemBackground
         return nav
     }
 

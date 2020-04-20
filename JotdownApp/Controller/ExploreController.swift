@@ -22,7 +22,7 @@ class ExploreController: UIViewController {
     // MARK: - Helpers
     
     func configureUI() {
-         view.backgroundColor = .white
+         view.backgroundColor = .systemBackground
         navigationItem.title = "Search"
      }
 }

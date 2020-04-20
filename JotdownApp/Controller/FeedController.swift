@@ -48,10 +48,10 @@ class FeedController: UICollectionViewController {
     // MARK: - Helpers
     
     func configureUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         
         let imageView = UIImageView(image: UIImage(named: "jotdown_logo_blue"))
         imageView.contentMode = .scaleAspectFit

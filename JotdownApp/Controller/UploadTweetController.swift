@@ -85,7 +85,7 @@ class UploadTweetController: UIViewController {
 // MARK: - Helpers
     
     func configureUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         configureNavigationBar()
         
         let stack = UIStackView(arrangedSubviews: [profileImageView, captionTextView])
@@ -99,7 +99,7 @@ class UploadTweetController: UIViewController {
     }
     
     func configureNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.barTintColor = .systemBackground
         navigationController?.navigationBar.isTranslucent = false
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleCancel))
