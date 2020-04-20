@@ -10,6 +10,7 @@ import UIKit
 
 protocol ProfileHeaderDelegate: class {
     func handleDismissal()
+    func handleEditProfileFollow(_ header: ProfileHeader)
 }
 
 class ProfileHeader: UICollectionReusableView {
@@ -53,9 +54,8 @@ class ProfileHeader: UICollectionReusableView {
         return iv
     }()
     
-    private lazy var editProfileFollowButton: UIButton = {
+    lazy var editProfileFollowButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Loading", for: .normal)
         button.layer.borderColor = UIColor.systemBlue.cgColor
         button.layer.borderWidth = 1.25
         button.setTitleColor(.systemBlue, for: .normal)
@@ -136,7 +136,7 @@ class ProfileHeader: UICollectionReusableView {
     }
     
     @objc func handleEditProfileFollow() {
-        
+        delegate?.handleEditProfileFollow(self)
     }
     
     // MARK: - Helpers
@@ -144,7 +144,8 @@ class ProfileHeader: UICollectionReusableView {
     func configure() {
         guard let user = user else { return }
         
-    // Could also be let viewModel = for line below
+        print("DEBUG: Did set called for user in profile header")
+        
         let viewModel = ProfileHeaderViewModel(user: user)
         
         profileImageView.sd_setImage(with: user.profileImageUrl)
