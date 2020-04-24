@@ -10,6 +10,7 @@ import UIKit
 
 protocol TweetCellDelegate: class {
     func handleProfileImageTapped(_ cell: TweetCell)
+    func handleLikeTapped(_ cell: TweetCell)
 }
 
 class TweetCell: UICollectionViewCell {
@@ -45,20 +46,20 @@ class TweetCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var commentButton: UIButton = {
+    private lazy var deleteButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "comment"), for: .normal)
+        button.setImage(UIImage(systemName: "trash"), for: .normal)
         button.tintColor = .darkGray
-        button.setDimensions(width: 20, height: 20)
-        button.addTarget(self, action: #selector(handleCommentTapped), for: .touchUpInside)
+        button.setDimensions(width: 16, height: 16)
+        button.addTarget(self, action: #selector(handleDeleteTapped), for: .touchUpInside)
         return button
     }()
     
     private lazy var retweetButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(systemName: "arrow.2.circlepath"), for: .normal)
+        button.setImage(UIImage(systemName: "plus.square"), for: .normal)
         button.tintColor = .darkGray
-        button.setDimensions(width: 20, height: 17)
+        button.setDimensions(width: 16, height: 16)
         button.addTarget(self, action: #selector(handleRetweetTapped), for: .touchUpInside)
         return button
     }()
@@ -67,17 +68,17 @@ class TweetCell: UICollectionViewCell {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "star"), for: .normal)
         button.tintColor = .darkGray
-        button.setDimensions(width: 20, height: 17)
+        button.setDimensions(width: 16, height: 16)
         button.addTarget(self, action: #selector(handleLikeTapped), for: .touchUpInside)
         return button
     }()
     
-    private lazy var shareButton: UIButton = {
+    private lazy var editButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        button.setImage(UIImage(systemName: "square.and.pencil"), for: .normal)
         button.tintColor = .darkGray
-        button.setDimensions(width: 20, height: 17)
-        button.addTarget(self, action: #selector(handleShareTapped), for: .touchUpInside)
+        button.setDimensions(width: 16, height: 16)
+        button.addTarget(self, action: #selector(handleEditTapped), for: .touchUpInside)
         return button
     }()
     
@@ -106,7 +107,7 @@ class TweetCell: UICollectionViewCell {
         infoLabel.font = UIFont.systemFont(ofSize: 14)
         infoLabel.text = "Testie Tester @testington"
         
-        let actionStack = UIStackView(arrangedSubviews: [retweetButton, likeButton, shareButton])
+        let actionStack = UIStackView(arrangedSubviews: [deleteButton, retweetButton, likeButton, editButton])
         actionStack.axis = .horizontal
         actionStack.spacing = 72
         
@@ -131,7 +132,7 @@ class TweetCell: UICollectionViewCell {
         delegate?.handleProfileImageTapped(self)
     }
     
-    @objc func handleCommentTapped() {
+    @objc func handleDeleteTapped() {
         
     }
     
@@ -140,10 +141,10 @@ class TweetCell: UICollectionViewCell {
     }
     
     @objc func handleLikeTapped() {
-        
+        delegate?.handleLikeTapped(self)
     }
     
-    @objc func handleShareTapped() {
+    @objc func handleEditTapped() {
         
     }
     
@@ -158,6 +159,8 @@ class TweetCell: UICollectionViewCell {
         
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
         infoLabel.attributedText = viewModel.userInfoText
+        likeButton.tintColor = viewModel.likeButtonTintColor
+        likeButton.setImage(viewModel.likeButtonImage, for: .normal)
     }
     
 }

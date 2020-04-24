@@ -70,7 +70,7 @@ class TweetHeader: UICollectionReusableView {
     }()
     
     private lazy var retweetButton: UIButton = {
-        let button = createButton(withImageName: "plus.square.on.square")
+        let button = createButton(withImageName: "plus.square")
         button.addTarget(self, action: #selector(handleRetweetTapped), for: .touchUpInside)
         return button
     }()
@@ -162,6 +162,8 @@ class TweetHeader: UICollectionReusableView {
         fullnameLabel.text = tweet.user.fullname
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
         dateLabel.text = viewModel.headerTimestamp
+        likeButton.setImage(viewModel.likeButtonImage, for: .normal)
+        likeButton.tintColor = viewModel.likeButtonTintColor
     }
     
     func createButton(withImageName imageName: String) -> UIButton {
