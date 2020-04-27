@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		744A955230F422FEE29BE5DB /* Pods_JotdownApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D97C1626FBB554B1615E6C /* Pods_JotdownApp.framework */; };
 		8A02C5EA2440FE71006202B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A02C5E92440FE71006202B5 /* Constants.swift */; };
+		8A2FC2F524573BBC0077CF1E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2FC2F424573BBC0077CF1E /* Notification.swift */; };
+		8A2FC2F724573DB00077CF1E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2FC2F624573DB00077CF1E /* NotificationService.swift */; };
+		8A2FC2F9245746A20077CF1E /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2FC2F8245746A20077CF1E /* NotificationCell.swift */; };
+		8A2FC2FB245767660077CF1E /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2FC2FA245767660077CF1E /* NotificationViewModel.swift */; };
 		8A7AC90B2442736D00F18DB1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AC90A2442736D00F18DB1 /* AuthService.swift */; };
 		8A97DF7A2444F0F10087D22F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97DF792444F0F10087D22F /* UserService.swift */; };
 		8A97DF7C2444F6160087D22F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97DF7B2444F6160087D22F /* User.swift */; };
@@ -46,6 +50,10 @@
 		45D97C1626FBB554B1615E6C /* Pods_JotdownApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JotdownApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AACFBDE3B6205DF9125A991 /* Pods-JotdownApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JotdownApp.release.xcconfig"; path = "Target Support Files/Pods-JotdownApp/Pods-JotdownApp.release.xcconfig"; sourceTree = "<group>"; };
 		8A02C5E92440FE71006202B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A2FC2F424573BBC0077CF1E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		8A2FC2F624573DB00077CF1E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8A2FC2F8245746A20077CF1E /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		8A2FC2FA245767660077CF1E /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		8A7AC90A2442736D00F18DB1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8A97DF792444F0F10087D22F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		8A97DF7B2444F6160087D22F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -163,6 +171,7 @@
 				8A7AC90A2442736D00F18DB1 /* AuthService.swift */,
 				8A97DF792444F0F10087D22F /* UserService.swift */,
 				8AB39F4E244614E400BFE24C /* TweetService.swift */,
+				8A2FC2F624573DB00077CF1E /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 			children = (
 				8ADCA9FA24475C5900DBF22D /* TweetViewModel.swift */,
 				8ADCAA002448B5F900DBF22D /* ProfileHeaderViewModel.swift */,
+				8A2FC2FA245767660077CF1E /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,6 +210,7 @@
 				8ADCA9FE2447D4C200DBF22D /* ProfileHeader.swift */,
 				8AB7358C244DECD800A46E73 /* UserCell.swift */,
 				8AB73590244E2E5B00A46E73 /* TweetHeader.swift */,
+				8A2FC2F8245746A20077CF1E /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 			children = (
 				8A97DF7B2444F6160087D22F /* User.swift */,
 				8AB39F502446195B00BFE24C /* Tweet.swift */,
+				8A2FC2F424573BBC0077CF1E /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +364,7 @@
 				8AB39F5324463BEC00BFE24C /* TweetCell.swift in Sources */,
 				8AC84FA2243D2843008F4D32 /* ExploreController.swift in Sources */,
 				8A7AC90B2442736D00F18DB1 /* AuthService.swift in Sources */,
+				8A2FC2FB245767660077CF1E /* NotificationViewModel.swift in Sources */,
 				8AB7358D244DECD800A46E73 /* UserCell.swift in Sources */,
 				8A97DF7E24451CE40087D22F /* UploadTweetController.swift in Sources */,
 				8A97DF7C2444F6160087D22F /* User.swift in Sources */,
@@ -362,8 +375,11 @@
 				8AB73591244E2E5B00A46E73 /* TweetHeader.swift in Sources */,
 				8AC653EB243FBB6E00C94C7D /* RegistrationController.swift in Sources */,
 				8AC84FA0243D27B0008F4D32 /* FeedController.swift in Sources */,
+				8A2FC2F524573BBC0077CF1E /* Notification.swift in Sources */,
+				8A2FC2F724573DB00077CF1E /* NotificationService.swift in Sources */,
 				8A02C5EA2440FE71006202B5 /* Constants.swift in Sources */,
 				8AB39F512446195B00BFE24C /* Tweet.swift in Sources */,
+				8A2FC2F9245746A20077CF1E /* NotificationCell.swift in Sources */,
 				8AB39F4F244614E400BFE24C /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
